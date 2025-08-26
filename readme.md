@@ -1,6 +1,9 @@
 # 🚫 No AI Zone
 
-![No AI Zone Logo](logo.png)
+<p align="center">
+  <img src="logo.png" alt="No AI Zone Logo" width="128" height="128">
+</p>
+
 
 **No AI Zone** is a browser extension designed to help you **focus during study sessions** by blocking AI tools and distracting websites. It includes a **Study Mode toggle**, a **lock timer**, and a customizable blocklist.
 
