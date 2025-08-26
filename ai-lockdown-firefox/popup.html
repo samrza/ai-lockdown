@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>No AI Zone</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        width: 260px;
+        padding: 14px;
+        background: #f9fafb;
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        padding: 14px;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        color: #111827;
+      }
+      .toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 14px 0;
+        font-size: 14px;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 42px;
+        height: 22px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #d1d5db;
+        transition: 0.3s;
+        border-radius: 22px;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: #2563eb;
+      }
+      input:checked + .slider:before {
+        transform: translateX(20px);
+      }
+      textarea {
+        width: 100%;
+        height: 80px;
+        margin-top: 6px;
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+        resize: vertical;
+      }
+      button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 8px;
+        border: none;
+        border-radius: 8px;
+        background-color: #2563eb;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      button:hover {
+        background-color: #1e40af;
+      }
+      select {
+        margin-top: 8px;
+        width: 100%;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid #d1d5db;
+      }
+      small {
+        display: block;
+        margin-top: 4px;
+        font-size: 11px;
+        color: #6b7280;
+      }
+      #timerStatus {
+        margin-top: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #dc2626;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>🚫 No AI Zone</h2>
+      <div class="toggle-container">
+        <span>Study Mode</span>
+        <label class="switch">
+          <input type="checkbox" id="studyToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <label for="timerSelect"><b>Lock Timer</b></label>
+      <select id="timerSelect">
+        <option value="0">No Timer</option>
+        <option value="30">30 minutes</option>
+        <option value="60">1 hour</option>
+        <option value="120">2 hours</option>
+        <option value="180">3 hours</option>
+      </select>
+      <button id="startTimerBtn">⏳ Start Timer</button>
+      <div id="timerStatus"></div>
+      <label for="blocklistArea"><b>Blocked Sites</b></label>
+      <textarea id="blocklistArea"></textarea>
+      <small>One domain per line (e.g. chat.openai.com)</small>
+      <button id="saveBtn">💾 Save Blocklist</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
