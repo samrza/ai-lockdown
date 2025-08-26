@@ -42,6 +42,7 @@
 ### AI Tools
 
 chat.openai.com
+chatgpt.com
 api.openai.com
 platform.openai.com
 bard.google.com
