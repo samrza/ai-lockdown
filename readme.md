@@ -1,4 +1,4 @@
-# 🚫 No AI Zone
+# 🚫ai-lockdown
 
 <p align="center">
   <img src="logo.png" alt="No AI Zone Logo" width="128" height="128">
