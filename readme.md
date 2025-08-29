@@ -5,7 +5,7 @@
 </p>
 
 
-**No AI Zone** is a browser extension designed to help you **focus during study sessions** by blocking AI tools and distracting websites. It includes a **Study Mode toggle**, a **lock timer**, and a customizable blocklist.
+**ai-lockdown** is a browser extension designed to help you **focus during study sessions** by blocking AI tools and distracting websites. It includes a **Study Mode toggle**, a **lock timer**, and a customizable blocklist.
 
 ---
 
@@ -63,7 +63,7 @@ _You can customize the blocklist directly in the extension popup._
 
 ## Usage
 
-1. Open the **No AI Zone** popup.
+1. Open the **ai-lockdown** popup.
 2. Toggle **Study Mode** to block AI sites.
 3. Optionally, select a **Lock Timer** duration.
 4. Edit the blocklist to add/remove sites as needed.
